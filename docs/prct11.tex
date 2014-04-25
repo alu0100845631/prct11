@@ -1,0 +1,117 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title[Número pi]{Aproximación del número pi}
+\author[Rebeka]{Rebeka Luis Hernández}
+\date[25.04.14]{25 de Abril de 2014}
+
+\begin{document}
+
+\begin{frame}
+ 
+  %\includegraphics[width=0.15\textwidth]{img/ullesc}
+  \hspace*{7.0cm}
+  %\includegraphics[width=0.16\textwidth]{img/fmatesc}
+  \titlepage
+
+  \begin{small}
+    \begin{center}
+     Facultad de Matemáticas \\
+     Universidad de La Laguna
+    \end{center}
+  \end{small}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Índice}
+  \tableofcontents[pausesections]
+\end{frame}
+
+\section{Primera Sección}
+\section{Segunda Sección}
+\section{Tercera Sección}
+
+\begin{frame}
+
+\frametitle{Historia del número pi}
+
+A lo largo de la historia han sido muchas las formas utilizadas por el ser humanos para calcular aproximaciones 
+cada vez más exactas del número $\pi$. El número $\pi$ es el cociente entre la longitud de una circunferencia 
+cualquiera y el diámetro de la misma. Ludolph van Ceulen (1540-1610), matemático alemán profesor de la 
+Universidad de Leiden en Holanda, se pasó buena parte de su vida calculandolos primeros 35 decimales de $\pi$.
+Calcularemos una aproximación del número $\pi$ mediante la siguiente fórmula:
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Cálculo del número pi}
+
+\begin{block}{}
+Para realizar la aproximación del número pi es necesarios seguir una serie de pasos:
+  \begin{itemize}
+  \item
+  Calculo del extremo de los subintervalos.
+  \pause
+
+  \item
+  Calculo del punto $x_i$.
+  \pause
+
+  \item
+  El valor de la función de aproximación de $pi$.
+
+  \end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Fórmulas}
+Se puede calcular mediante integración:
+
+$\int_{0}^{1} \! \frac{4}{1+x^2}\, dx = 4(atan(1) -atan(0)) = \pi $
+
+
+O mediante la regla del punto medio:
+
+
+$\pi \approx \frac{1}{n} \sum\limits_{i=1}^{n}f(x_i)\,$,
+con $f(x) = \frac{4}{(1+x^2)}\,$,
+$x_i = \frac{i - \frac{1}{2}}{n}$,
+para $i = , \dots, n$
+
+Area del circulo $a = \pi \times r^2$
+
+
+
+\end{frame}
+
+\section{Bibliografía}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+  \frametitle{Bibliografía}
+
+  \begin{thebibliography}{10}
+
+    \beamertemplatebookbibitems
+    \bibitem[Python]{tutorial}
+    Tutorial Python.
+    {\small $http://campusvirtual.ull.es/1314/course/view.php?id=1447$}
+
+    \beamertemplatebookbibitems
+    \bibitem[Beamer]{tutorial}
+    Tutorial Beamer.
+    {\small $http://campusvirtual.ull.es/1314/course/view.php?id=1447$}
+
+    \beamertemplatebookbibitems
+    \bibitem[URL: CTAN]{latex}
+    CTAN. {\small $http://www.ctan.org/$}
+
+  \end{thebibliography}
+\end{frame}
+
+
+\end{document}
